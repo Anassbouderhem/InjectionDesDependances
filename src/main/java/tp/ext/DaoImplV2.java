@@ -1,10 +1,10 @@
 package tp.ext;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 import tp.dao.IDao;
 
 
-@Component("d2")
+@Repository("d2")
 
 public class DaoImplV2 implements IDao {
 
