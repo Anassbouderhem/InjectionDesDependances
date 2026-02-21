@@ -1,16 +1,23 @@
 package tp.metier;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
 import tp.dao.IDao;
 
+@Component("metier")
+
 public class MetierImpl implements IMetier {
-    private IDao dao;
+    @Autowired
+    @Qualifier("d2")
+    private IDao dao; //Couplage faible
 
     /**
      * Constructeur pour injecter dans l'attribut dao
      * un objet d'une classe qui implémente l'interface IDAO
      * au moment de l'instantiation
      */
-    public MetierImpl(IDao dao){
+    public MetierImpl( IDao dao){
         this.dao=dao;
     }
     public MetierImpl() {
