@@ -51,7 +51,7 @@ Cela permet de changer l'implémentation sans modifier le code métier.
     └───java
 ```
 ### Diagramme UML
-![img_1.png](img_1.png)
+![img_1.png](img.png)
 
 ### Les 4 méthodes d'injection
 
